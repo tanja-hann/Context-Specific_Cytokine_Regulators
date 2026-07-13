@@ -1,110 +1,74 @@
-# T-cell Cytokine Regulator Target Browser
+# Context-Specific Cytokine Regulators
 
-A lightweight, fully static website for browsing **128 context-specific cytokine
-regulators** identified in genome-scale CD4+ T-cell Perturb-seq (Zhu, Dann et
-al. 2025). Each target carries selectivity and two-axis (protein / RNA)
-druggability scores, a nominated therapeutic modality, an AlphaFold structure
-with its fpocket-detected druggable pockets highlighted, real ASO/siRNA target
-sites on the transcript, external database links, and the cytokines it
-significantly regulates.
+An interactive target browser for **128 context-specific cytokine regulators** in
+human CD4+ T cells — genes that control disease-relevant cytokines specifically
+when T cells are activated, and not at rest. These are candidate drug targets
+whose interference could calm an over-active immune response while leaving the
+resting immune system largely untouched.
 
-**No backend. No build server.** Everything is plain HTML/CSS/JS + JSON files,
-so it hosts directly on GitHub Pages.
+The browser presents, for each target: a **selectivity** score, **two-axis
+druggability** (protein-level vs RNA-level), a **nominated therapeutic modality**
+(small molecule, antibody/biologic, ASO, or siRNA), the **AlphaFold structure**
+with its predicted druggable pockets highlighted, real **ASO/siRNA target sites**
+mapped onto the transcript, the **cytokines it significantly regulates**, and
+links out to UniProt, AlphaFold, Open Targets, and other resources.
 
-The landing page opens with an **interactive two-axis druggability matrix**
-(protein-level vs RNA-level relative druggability, colored by nominated
-modality); click any point — or any table row — to open that gene's page.
+## The science, briefly
 
----
+Immune diseases such as rheumatoid arthritis, psoriasis, and inflammatory bowel
+disease are driven by T cells releasing too much of certain cytokines. Building
+on a genome-scale **Perturb-seq** screen in primary human CD4+ T cells (Zhu,
+Dann et al. 2025), this project asks which genes regulate a disease-relevant
+cytokine **only in the stimulated state** — using a statistical
+*interaction* test between resting and stimulated conditions — and then, for the
+128 regulators that pass, which could realistically be turned into a drug and by
+what modality. The full analysis and write-up are on the site's **Background**
+and **Data support** pages.
 
-## Quick start (local preview)
+## Viewing the site
 
-```bash
-cd site
-python -m http.server 8000
-# open http://localhost:8000
-```
+It's a fully static website (plain HTML/CSS/JS + JSON) — no backend, no build
+step needed to view it. It is served here via GitHub Pages.
 
-> You must serve over HTTP (not `file://`) — the pages `fetch()` JSON.
-
-**Runs offline.** Everything this site loads is vendored locally — Mol* (3D
-viewer), Roboto / Roboto Mono fonts, and the AlphaFold structures — so the demo
-runs with no internet. (Vendored assets: `assets/vendor/molstar/`,
-`assets/fonts/`, `data/structures/`.)
-
-Note: the bundled `molstar.js` library contains inert external URLs (license
-comments and its built-in default data-provider endpoints, e.g. RCSB/PDBe).
-These are **not** contacted by this site — structures are loaded from local
-`data/structures/*.pdb` paths, so no remote provider is invoked. If you later
-add a feature that fetches structures by PDB ID from a remote source, that
-specific action would require network access.
-
----
-
-## How the data flows
-
-```
-build/config.json         ← score columns, flags, links, detail fields (EDIT HERE)
-build/source_128.csv      ← one row per gene: symbol, uniprot, scores, flags, modality, details, transcript
-build/structures/<SYM>.pdb← AlphaFold model; occupancy col = 1.0 for pocket-lining residues
-build/pockets/<SYM>.json  ← top-3 fpocket pockets (druggability, volume, proximal residues)
-build/rna_real/<SYM>.json ← real ASO/siRNA target sites (position, window, accessibility, modality)
-build/cds_cache/<TX>.json ← transcript-relative CDS bounds (Ensembl, cached)
-build/perturb/<SYM>.json  ← cytokines this gene significantly regulates (log2FC, direction)
-build/landscape.json      ← shared effect-vs-selectivity scatter (all 128 genes)
-        │
-        ▼   python build_data.py --source build/source_128.csv
-data/index.json           → landing-page table + interactive matrix
-data/genes/<SYM>.json     → per-gene detail page
-data/structures/<SYM>.pdb → AlphaFold model (copied from build/, pocket residues in occupancy col)
-data/landscape.json       → landscape scatter shared by all gene pages
-```
-
-The frontend reads only the `data/` files. **Swapping in new results never
-touches the site code** — you regenerate `data/` and push. All inputs are local;
-`build_data.py` needs the network only to refresh UniProt display metadata
-(protein name / length / function), which is cached under `build/cache/` — pass
-`--no-net` to build entirely offline from the cache.
-
-### Data provenance
-
-Scores are the **final, cohort-relative** values from the druggability analysis
-(`druggability_summary_table.csv`): `protein_score_relative` and
-`RNA_score_relative` (each renormalized across the 128-gene cohort, centered
-0.5), plus the per-gene selectivity index. Pocket-lining residues are computed
-from fpocket alpha-spheres (≤4.5 Å to any sphere) on the AlphaFold model and
-encoded in the PDB occupancy column so Mol*'s built-in `occupancy` color theme
-highlights them. RNA sites are the qualifying ASO/siRNA target windows
-(accessibility + efficacy + specificity gates). Cytokine effects are the robust
-per-gene×cytokine log2FC (Stim8hr) at interaction FDR < 0.05.
-
----
-
-## Deploy to GitHub Pages
+To run it locally, from the repository root:
 
 ```bash
-git init && git add . && git commit -m "target browser"
-git branch -M main
-git remote add origin git@github.com:<you>/<repo>.git
-git push -u origin main
+python3 -m http.server 8000
+# then open http://localhost:8000
 ```
-Then in the repo: **Settings → Pages → Source: `main` / root** (or move the
-`site/` contents to `/docs` and point Pages at `/docs`). Live in ~1 minute.
 
----
+Serve over HTTP (not by double-clicking the files) — the pages fetch JSON. The
+3D viewer (Mol*), fonts, and all AlphaFold structures are bundled in the repo,
+so it works without an internet connection.
 
-## Files
+## What's in the site
 
-| Path | Purpose |
+| Page | Contents |
 |---|---|
-| `index.html` / `assets/js/table.js` | Sortable, filterable score table with color bars |
-| `index.html` / `assets/js/table.js` | Interactive druggability matrix + sortable, filterable score table |
-| `gene.html` / `assets/js/gene.js` | Per-gene page: scores, Mol* 3D viewer with pockets, mRNA map, landscape, cytokine effects |
-| `assets/js/theme.js` | Light/dark theme toggle (light default) + footer |
-| `assets/css/style.css` | Warm Anthropic-inspired theme (light + dark) |
-| `build_data.py` | Data pipeline (source → `data/`) |
-| `build/config.json` | Column / flag / link / detail-field definitions |
+| **Home** (`index.html`) | Interactive protein-vs-RNA druggability matrix + a sortable, filterable table of all 128 targets |
+| **Gene pages** (`gene.html`) | Per-target scores, 3D AlphaFold structure with druggable pockets, mRNA map with ASO/siRNA sites, landscape position, and cytokine effects |
+| **Data support** (`data-support.html`) | The 30-cytokine effect-vs-selectivity showcase |
+| **Background** (`background.html`) | Research write-up |
 
-Current data: the **final 128-gene target set** (128 context-specific cytokine
-regulators, cohort-relative druggability scores, real modality calls,
-structures, RNA sites, and cytokine effects).
+## Data provenance
+
+Druggability scores are cohort-relative values (protein and RNA axes each
+renormalized across the 128-gene set). Pocket-lining residues are computed from
+fpocket alpha-spheres on the AlphaFold models. RNA sites are qualifying ASO/siRNA
+target windows (accessibility + efficacy + specificity gates). Cytokine effects
+are the robust per-gene × cytokine log₂ fold-changes (8 h stimulation) at
+interaction FDR < 0.05.
+
+The `build/` folder and `build_data.py` regenerate the site's `data/` files from
+the source tables; the front-end reads only `data/`, so refreshing results never
+requires touching the site code.
+
+## Citation
+
+Zhu R., Dann E. et al. (2025) *Genome-scale perturb-seq in primary human CD4+ T
+cells maps context-specific regulators of T cell programs and human immune
+traits.* bioRxiv.
+
+## Credits
+
+Developed by Tanja Hann, with Claude Science.
