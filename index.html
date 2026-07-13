@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>T-cell Cytokine Regulator Targets</title>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('tb-theme')||'light');</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="subtle"><span class="brand-dot"></span>Target Browser</div>
+    <span class="spacer"></span>
+    <a class="navlink" href="data-support.html">Data support</a>
+    <a class="navlink" href="background.html">Background</a>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾ Dark</button>
+  </div>
+  <div class="hero">
+    <h1 id="site-title">Loading…</h1>
+    <p id="site-subtitle"></p>
+    <div class="meta">
+      <span class="pill" id="pill-count"></span>
+      <span class="pill">Static · GitHub Pages ready</span>
+      <span class="pill" id="pill-note"></span>
+    </div>
+  </div>
+
+  <div class="card matrix-card">
+    <div class="matrix-head">
+      <h2>Two-axis druggability matrix</h2>
+      <p class="subtle">Each point is one of the 128 regulators — protein-level vs RNA-level relative druggability, colored by nominated modality. Click a point to open its gene page. Points above the diagonal favor an RNA modality; below, a protein modality.</p>
+    </div>
+    <div id="matrix"></div>
+  </div>
+
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search gene or protein…" autocomplete="off">
+    <div id="flagchips"></div>
+    <span class="spacer"></span>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="card">
+    <table id="tbl">
+      <thead id="thead"></thead>
+      <tbody id="tbody"><tr><td class="loading">Loading data…</td></tr></tbody>
+    </table>
+  </div>
+  <footer id="site-footer" class="site-footer"></footer>
+</div>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/table.js"></script>
+<script>window.__initTheme();</script>
+</body>
+</html>

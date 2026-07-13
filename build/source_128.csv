@@ -1,0 +1,129 @@
+symbol,uniprot,selectivity,protein_drug,rna_drug,surface,enzyme,rna_only,modality,nominated_modality,winning_axis,quadrant,best_route,sm_score,sirna_score,aso_score,transcript_id,mod_aso,mod_sirna
+TXNDC12,O95881,0.8823,0.274,0.999,0,0,1,siRNA,siRNA,RNA,RNA-preferred,small molecule,0.321,0.9,0.0,ENST00000371626,0,1
+UBE2E2,Q96LR5,0.1981,0.1,0.7,0,0,1,siRNA,siRNA,RNA,RNA-preferred,small molecule,0.087,0.604,0.604,ENST00000396703,0,1
+DNTTIP1,Q9H147,0.1156,0.271,0.698,0,0,1,siRNA,siRNA,RNA,RNA-preferred,small molecule,0.317,0.601,0.495,ENST00000372622,0,1
+GTF3C6,Q969F1,0.2374,0.11,0.638,0,0,1,siRNA,siRNA,RNA,RNA-preferred,small molecule,0.1,0.542,0.0,ENST00000329970,0,1
+ATXN7L3,Q14CW9,0.1613,0.296,0.57,1,0,1,ASO,ASO,RNA,RNA-preferred,antibody/biologic,0.35,0.241,0.474,ENST00000587097,1,0
+TBX21,Q9UL17,0.2039,0.169,0.52,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.18,0.235,0.425,ENST00000177694,1,0
+KHDRBS1,Q07666,0.2076,0.279,0.515,0,0,1,siRNA,siRNA,RNA,RNA-preferred,small molecule,0.328,0.42,0.252,ENST00000327300,0,1
+AVEN,Q9NQS1,0.7131,0.296,0.496,1,0,1,ASO,ASO,RNA,RNA-preferred,antibody/biologic,0.35,0.158,0.402,ENST00000306730,1,0
+XRRA1,Q6P2D8,0.2497,0.276,0.494,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.324,0.211,0.399,ENST00000684022,1,0
+EIF4G2,P78344,0.1339,0.203,0.487,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.225,0.295,0.393,ENST00000339995,1,0
+ARID4B,Q4LE39,0.6292,0.085,0.426,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.066,0.138,0.332,ENST00000264183,1,0
+SETD1B,Q9UPS6,0.2161,0.106,0.425,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.095,0.123,0.331,ENST00000604567,1,0
+DDRGK1,Q96HY6,0.1422,0.12,0.395,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.114,0.234,0.302,ENST00000354488,1,0
+ELP5,Q8TE02,0.3944,0.209,0.366,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.234,0.178,0.272,ENST00000396628,1,0
+ATF7IP2,Q5U623,0.34,0.16,0.365,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.168,0.139,0.272,ENST00000562102,1,0
+ARHGAP27,Q6ZUM4,0.125,0.276,0.361,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.323,0.056,0.267,ENST00000685559,1,0
+LCP2,Q13094,0.0094,0.064,0.352,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.038,0.082,0.259,ENST00000046794,1,0
+SUPT20H,Q8NEM7,0.1938,0.069,0.341,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.045,0.137,0.248,ENST00000350612,1,0
+ANKRD11,Q6UB99,0.8671,0.085,0.328,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.066,0.115,0.234,ENST00000301030,1,0
+NIPBL,Q6KC79,0.3458,0.228,0.316,0,0,1,ASO,ASO,RNA,RNA-preferred,small molecule,0.259,0.118,0.223,ENST00000282516,1,0
+APPL2,Q06481,0.4098,0.51,0.918,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.639,0.393,0.82,ENST00000258530,1,0
+CD3E,P07766,0.0013,0.629,0.894,1,0,0,ASO,ASO,RNA,Both viable,antibody/biologic,0.8,0.66,0.797,ENST00000361763,1,0
+NFKB2,Q00653,0.076,0.488,0.877,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.61,0.189,0.779,ENST00000661543,1,0
+PGK1,P00558,0.2203,0.778,0.87,0,1,0,ASO,ASO,RNA,Both viable,small molecule,1.0,0.691,0.772,ENST00000373316,1,0
+METAP2,P50579,0.3911,0.571,0.86,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.721,0.742,0.763,ENST00000323666,1,0
+SND1,Q7KZF4,0.3953,0.673,0.859,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.859,0.617,0.762,ENST00000354725,1,0
+PPP3R1,P63098,0.3034,0.664,0.835,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.847,0.738,0.235,ENST00000234310,0,1
+ACTR2,P61160,0.2569,0.704,0.814,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.9,0.716,0.143,ENST00000260641,0,1
+TMED9,Q9BVK6,0.1061,0.684,0.796,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.873,0.693,0.699,ENST00000332598,1,0
+UGDH,O60701,0.5941,0.757,0.79,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.972,0.694,0.486,ENST00000316423,0,1
+CALCOCO2,Q13137,0.1194,0.584,0.786,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.739,0.443,0.689,ENST00000258947,1,0
+SPTLC2,O15270,0.3394,0.629,0.781,1,0,0,ASO,ASO,RNA,Both viable,antibody/biologic,0.8,0.562,0.685,ENST00000216484,1,0
+MTHFD1,P11586,0.4326,0.778,0.443,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,1.0,0.349,0.176,ENST00000652337,0,0
+CD3G,P09693,0.0155,0.674,0.769,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.86,0.434,0.673,ENST00000532917,1,0
+CPSF6,Q16630,0.0832,0.474,0.759,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.59,0.359,0.662,ENST00000435070,1,0
+DNAJC2,Q99543,0.2231,0.383,0.759,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.468,0.246,0.663,ENST00000379263,1,0
+SGF29,Q96ES7,0.1449,0.753,0.341,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.966,0.248,0.24,ENST00000317058,0,0
+TMBIM4,Q9HC24,0.6633,0.75,0.708,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.963,0.612,0.246,ENST00000358230,0,0
+ATP2A2,P16615,0.0611,0.701,0.747,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.897,0.296,0.65,ENST00000539276,1,0
+CDS2,O95674,0.4117,0.636,0.744,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.809,0.544,0.648,ENST00000460006,1,0
+ITK,Q08881,0.1424,0.742,0.575,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.952,0.303,0.48,ENST00000422843,0,0
+PGGT1B,P53609,0.2324,0.717,0.476,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.918,0.212,0.381,ENST00000419445,0,0
+CAND1,Q86VP6,0.3908,0.712,0.495,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.911,0.251,0.4,ENST00000545606,0,0
+UBE2L3,P68036,0.344,0.704,0.708,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.9,0.612,0.476,ENST00000342192,0,1
+ZAP70,P43403,0.0075,0.706,0.3,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.903,0.02,0.207,ENST00000264972,0,0
+NAA20,P61599,0.4447,0.704,0.502,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.9,0.407,0.208,ENST00000334982,0,0
+RAC2,P15153,0.446,0.701,0.503,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.897,0.408,0.396,ENST00000249071,0,0
+ARPC2,O15144,0.2992,0.701,0.529,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.897,0.434,0.386,ENST00000315717,0,0
+CFAP298,P57076,0.2193,0.327,0.694,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.392,0.558,0.598,ENST00000290155,1,0
+ELP3,Q9H9T3,0.1355,0.693,0.692,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.886,0.596,0.572,ENST00000256398,0,0
+CD28,P10747,0.2233,0.692,0.472,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.884,0.244,0.378,ENST00000324106,0,0
+PLCG1,P19174,0.0252,0.557,0.688,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.702,0.11,0.592,ENST00000685551,1,0
+NAA25,Q14CX7,0.8002,0.687,0.441,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.877,0.167,0.347,ENST00000261745,0,0
+UFM1,P61960,0.106,0.687,0.633,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.878,0.537,0.457,ENST00000239878,0,0
+SEC14L1,Q92503,0.2537,0.636,0.687,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.809,0.38,0.591,ENST00000436233,1,0
+FAM20B,O75063,0.4681,0.681,0.514,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.869,0.387,0.419,ENST00000263733,0,0
+ELP2,Q6IA86,0.2104,0.677,0.488,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.864,0.201,0.393,ENST00000358232,0,0
+SLC7A6,Q92536,0.817,0.629,0.677,1,0,0,ASO,ASO,RNA,Both viable,antibody/biologic,0.8,0.166,0.581,ENST00000219343,1,0
+EIF4A1,P60842,0.4729,0.673,0.426,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.858,0.332,0.0,ENST00000293831,0,0
+H2AZ1,P0C0S5,0.8114,0.673,0.424,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.858,0.33,0.083,ENST00000296417,0,0
+CYB5R4,Q7L1T6,0.0931,0.633,0.669,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.805,0.56,0.573,ENST00000369681,1,0
+VAV1,P15498,0.0298,0.668,0.315,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.852,0.09,0.222,ENST00000602142,0,0
+SUPV3L1,Q8IYB8,0.6545,0.668,0.541,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.852,0.373,0.446,ENST00000359655,0,0
+EIF1,P41567,0.5496,0.668,0.6,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.852,0.504,0.2,ENST00000469257,0,0
+CCNC,P24863,0.5879,0.664,0.405,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.846,0.235,0.311,ENST00000520429,0,0
+CROT,Q9UKG9,0.5208,0.66,0.549,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.841,0.296,0.454,ENST00000331536,0,0
+HACD4,Q5VWC8,0.3756,0.658,0.659,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.838,0.495,0.563,ENST00000495827,1,0
+ATXN10,Q9UBB4,0.2974,0.486,0.658,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.606,0.56,0.562,ENST00000252934,1,0
+MED24,O75448,0.0417,0.652,0.474,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.831,0.111,0.379,ENST00000394128,0,0
+GET1,O00258,0.2441,0.646,0.542,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.822,0.448,0.142,ENST00000649170,0,0
+MED12,Q93074,0.1188,0.422,0.644,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.52,0.16,0.549,ENST00000374080,1,0
+SRP9,P49458,0.3658,0.641,0.393,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.816,0.3,0.12,ENST00000304786,0,0
+NFKB1,P19838,0.8262,0.52,0.638,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.652,0.399,0.543,ENST00000226574,1,0
+CCDC134,Q9H6E4,0.8959,0.407,0.632,1,0,0,ASO,ASO,RNA,Both viable,antibody/biologic,0.5,0.404,0.536,ENST00000255784,1,0
+SLC39A13,Q96H72,0.5021,0.631,0.324,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.802,0.072,0.231,ENST00000362021,0,0
+LTB4R,Q15722,0.5986,0.629,0.438,1,0,0,Antibody/biologic,Antibody/biologic,protein,Both viable,antibody/biologic,0.8,0.014,0.344,ENST00000345363,0,0
+CD247,P20963,0.1059,0.629,0.418,1,0,0,Antibody/biologic,Antibody/biologic,protein,Both viable,antibody/biologic,0.8,0.244,0.324,ENST00000362089,0,0
+EFR3A,Q14156,0.1403,0.629,0.616,1,0,0,Antibody/biologic,Antibody/biologic,protein,Both viable,antibody/biologic,0.8,0.386,0.521,ENST00000254624,0,0
+CD2,P06729,0.2719,0.629,0.375,1,0,0,Antibody/biologic,Antibody/biologic,protein,Both viable,antibody/biologic,0.8,0.281,0.262,ENST00000369478,0,0
+SLC3A2,P08195,0.1366,0.629,0.331,1,0,0,Antibody/biologic,Antibody/biologic,protein,Both viable,antibody/biologic,0.8,0.118,0.238,ENST00000338663,0,0
+RNF20,Q5VTR2,0.2795,0.571,0.627,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.721,0.396,0.531,ENST00000389120,1,0
+MMAB,Q96EY8,0.2215,0.575,0.61,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.727,0.383,0.515,ENST00000545712,1,0
+MTA3,Q9BTC8,0.296,0.517,0.609,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.649,0.418,0.514,ENST00000405094,1,0
+ARNT,P27540,0.135,0.312,0.608,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.372,0.285,0.513,ENST00000358595,1,0
+GNPAT,O15228,0.3648,0.607,0.404,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.77,0.301,0.31,ENST00000366647,0,0
+LRBA,P50851,0.1138,0.6,0.553,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.76,0.324,0.458,ENST00000651943,0,0
+STAT5B,P51692,0.1463,0.568,0.593,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.717,0.214,0.498,ENST00000293328,1,0
+PARP2,Q9UGN5,0.3628,0.586,0.59,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.741,0.316,0.494,ENST00000429687,1,0
+FITM2,Q8N6M3,0.0692,0.57,0.589,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.72,0.352,0.493,ENST00000396825,1,0
+PTBP1,P26599,0.3089,0.332,0.579,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.399,0.244,0.484,ENST00000356948,1,0
+MEAF6,Q9HAF1,0.2528,0.54,0.559,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.68,0.448,0.464,ENST00000296214,1,0
+FAF2,Q96CS3,0.2517,0.31,0.558,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.37,0.32,0.463,ENST00000261942,1,0
+PTPRC,P08575,0.1447,0.542,0.412,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.682,0.319,0.319,ENST00000442510,0,0
+FZD6,O60353,0.2112,0.534,0.349,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.672,0.174,0.256,ENST00000358755,0,0
+SMARCE1,Q969G3,0.0328,0.499,0.525,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.624,0.371,0.43,ENST00000348513,1,0
+RBM12,Q9NTZ6,0.4652,0.454,0.523,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.563,0.287,0.428,ENST00000374114,1,0
+FBXL3,Q9UKT7,0.4079,0.521,0.327,0,1,0,Small molecule,Small molecule,protein,Both viable,small molecule,0.654,0.234,0.204,ENST00000355619,0,0
+TMX1,Q9H3N1,0.0758,0.407,0.507,1,0,0,siRNA,siRNA,RNA,Both viable,antibody/biologic,0.5,0.413,0.27,ENST00000457354,0,1
+SLK,Q9H2G2,0.31,0.416,0.491,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.512,0.264,0.397,ENST00000369755,1,0
+NDFIP2,Q9NV92,0.3212,0.324,0.483,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.389,0.388,0.303,ENST00000218652,0,1
+MBD2,Q9UBB5,0.3926,0.423,0.464,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.522,0.291,0.37,ENST00000256429,1,0
+BTAF1,O14981,0.4466,0.376,0.456,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.459,0.048,0.362,ENST00000265990,1,0
+MED15,Q96RN5,0.5536,0.405,0.455,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.497,0.086,0.36,ENST00000263205,1,0
+YTHDF2,Q9Y5A9,0.2061,0.301,0.455,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.357,0.361,0.276,ENST00000373812,0,1
+TADA2B,Q86TJ2,0.0992,0.382,0.444,0,1,0,siRNA,siRNA,RNA,Both viable,small molecule,0.466,0.35,0.348,ENST00000310074,0,1
+ZFX,P17010,0.3437,0.375,0.4,0,1,0,ASO,ASO,RNA,Both viable,small molecule,0.457,0.194,0.306,ENST00000304543,1,0
+BCAT2,O15382,0.0299,0.727,0.276,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.931,0.115,0.183,ENST00000316273,0,0
+CDIPT,O14735,0.4394,0.72,0.239,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.922,0.096,0.147,ENST00000219789,0,0
+LCK,P06239,0.0759,0.686,0.272,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.876,0.097,0.179,ENST00000336890,0,0
+CD3D,P04234,0.0284,0.68,0.281,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.868,0.186,0.188,ENST00000300692,0,0
+HMBS,P08397,0.3499,0.678,0.258,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.865,0.158,0.165,ENST00000652429,0,0
+LAT,O43561,0.0314,0.629,0.111,1,0,0,Antibody/biologic,Antibody/biologic,protein,Protein-preferred,antibody/biologic,0.8,0.019,0.0,ENST00000395456,0,0
+LRIG1,Q96JA1,0.3146,0.629,0.276,1,0,0,Antibody/biologic,Antibody/biologic,protein,Protein-preferred,antibody/biologic,0.8,0.076,0.183,ENST00000273261,0,0
+ORAI1,Q96D31,0.1338,0.629,0.175,1,0,0,Antibody/biologic,Antibody/biologic,protein,Protein-preferred,antibody/biologic,0.8,0.083,0.041,ENST00000617316,0,0
+SHOC2,Q9UQ13,0.3921,0.609,0.183,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.773,0.082,0.091,ENST00000369452,0,0
+STK11,Q15831,0.1573,0.548,0.17,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.69,0.059,0.078,ENST00000326873,0,0
+ZNF790,Q6PG37,0.4406,0.496,0.091,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.62,0.0,0.0,ENST00000356725,0,0
+MYC,P01106,0.2824,0.434,0.144,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.536,0.033,0.052,ENST00000621592,0,0
+CARMIL2,Q6F5E8,0.0958,0.407,0.288,1,0,0,Antibody/biologic,Antibody/biologic,protein,Protein-preferred,antibody/biologic,0.5,0.04,0.195,ENST00000334583,0,0
+TAF6L,Q9Y6J9,0.1567,0.404,0.177,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.496,0.042,0.085,ENST00000294168,0,0
+TIMM8B,Q9Y5J9,0.4008,0.338,0.231,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.407,0.092,0.139,ENST00000504148,0,0
+WRAP53,Q9BUR4,0.8358,0.315,0.245,0,1,0,Small molecule,Small molecule,protein,Protein-preferred,small molecule,0.376,0.068,0.153,ENST00000396463,0,0
+SIK3,Q9Y2K2,0.2353,0.26,0.268,0,0,0,ASO,ASO,RNA,Neither viable,small molecule,0.302,0.072,0.175,ENST00000445177,1,0
+DUSP12,Q9UNI6,0.1639,0.16,0.253,0,0,0,ASO,ASO,RNA,Neither viable,small molecule,0.167,0.082,0.161,ENST00000367943,1,0
+FOXO1,Q12778,0.2908,0.25,0.181,0,0,0,Small molecule,Small molecule,protein,Neither viable,small molecule,0.289,0.06,0.088,ENST00000379561,0,0
+THAP11,Q96EK4,0.4186,0.14,0.176,0,0,0,siRNA,siRNA,RNA,Neither viable,small molecule,0.14,0.084,0.084,ENST00000303596,0,1
+EGR2,P11161,0.2046,0.131,0.158,0,0,0,ASO,ASO,RNA,Neither viable,small molecule,0.128,0.027,0.066,ENST00000242480,1,0
+GATA3,P23771,0.1992,0.115,0.091,0,0,0,Small molecule,Small molecule,protein,Neither viable,small molecule,0.107,0.0,0.0,ENST00000379328,0,0

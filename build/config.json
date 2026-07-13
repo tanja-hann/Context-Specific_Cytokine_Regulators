@@ -1,0 +1,142 @@
+{
+ "site": {
+  "title": "T-cell Cytokine Regulator Targets",
+  "subtitle": "128 context-specific cytokine regulators from genome-scale CD4+ T-cell Perturb-seq \u2014 druggability & therapeutic modality",
+  "footer": "128 context-specific regulators of 30 cytokines (Rest vs Stim8hr interaction, DESeq2 effect sizes). Scores are relative to this hit-gene cohort. See methods in the source repository.",
+  "attribution": "Developed by Tanja Hann, with Claude Science.",
+  "citation": {
+   "text": "Zhu R., Dann E. et al. (2025) Genome-scale perturb-seq in primary human CD4+ T cells maps context-specific regulators of T cell programs and human immune traits. bioRxiv.",
+   "url": "https://www.biorxiv.org/content/10.64898/2025.12.23.696273v1"
+  },
+  "repo_url": "https://github.com/tanja-hann/Context-Specific_Cytokine_Regulators"
+ },
+ "scores": [
+  {
+   "key": "selectivity",
+   "label": "Selectivity",
+   "group": "Perturb-seq",
+   "min": 0,
+   "max": 1,
+   "palette": "amber",
+   "desc": "Selectivity index (0.7\u00b7focus + 0.3\u00b7footprint), per gene. Higher = a more focused regulator of few cytokines rather than a broad master regulator. Relative to the 128-gene cohort."
+  },
+  {
+   "key": "protein_drug",
+   "label": "Protein druggability",
+   "group": "Druggability",
+   "min": 0,
+   "max": 1,
+   "palette": "blue",
+   "desc": "Relative protein-level druggability: max(small-molecule pocket, antibody/biologic surface accessibility), renormalized across the 128-gene cohort (centered 0.5)."
+  },
+  {
+   "key": "rna_drug",
+   "label": "RNA druggability",
+   "group": "Druggability",
+   "min": 0,
+   "max": 1,
+   "palette": "green",
+   "desc": "Relative RNA-level druggability: max(siRNA, ASO) targeting-site + stability/localization score, renormalized across the cohort (centered 0.5)."
+  }
+ ],
+ "flags": [
+  {
+   "key": "surface",
+   "label": "Antibody route",
+   "desc": "Antibody/biologic is a viable protein sub-route (surface-accessible / localization-supported). Route-viability flag \u2014 can co-occur with an RNA nomination."
+  },
+  {
+   "key": "enzyme",
+   "label": "Small-molecule route",
+   "desc": "Small-molecule is a viable protein sub-route (druggable pocket, relative protein score \u2265 0.3). Route-viability flag \u2014 can co-occur with an RNA nomination."
+  },
+  {
+   "key": "mod_aso",
+   "label": "ASO-nominated",
+   "desc": "Nominated therapeutic modality is an antisense oligonucleotide (RNA-level knockdown)."
+  },
+  {
+   "key": "mod_sirna",
+   "label": "siRNA-nominated",
+   "desc": "Nominated therapeutic modality is siRNA (RNA-level knockdown)."
+  }
+ ],
+ "modalities": [
+  "Small molecule",
+  "Antibody/biologic",
+  "ASO",
+  "siRNA"
+ ],
+ "detail_fields": [
+  {
+   "key": "nominated_modality",
+   "label": "Nominated modality"
+  },
+  {
+   "key": "winning_axis",
+   "label": "Winning axis"
+  },
+  {
+   "key": "quadrant",
+   "label": "Druggability quadrant"
+  },
+  {
+   "key": "best_route",
+   "label": "Protein sub-route"
+  },
+  {
+   "key": "sm_score",
+   "label": "Protein score (absolute)"
+  },
+  {
+   "key": "sirna_score",
+   "label": "siRNA sub-score"
+  },
+  {
+   "key": "aso_score",
+   "label": "ASO sub-score"
+  }
+ ],
+ "external_links": [
+  {
+   "key": "uniprot",
+   "label": "UniProt",
+   "url": "https://www.uniprot.org/uniprotkb/{acc}"
+  },
+  {
+   "key": "alphafold",
+   "label": "AlphaFold",
+   "url": "https://alphafold.ebi.ac.uk/entry/{acc}"
+  },
+  {
+   "key": "opentargets",
+   "label": "Open Targets",
+   "url": "https://platform.opentargets.org/target/{ensembl_gene}"
+  },
+  {
+   "key": "genecards",
+   "label": "GeneCards",
+   "url": "https://www.genecards.org/cgi-bin/carddisp.pl?gene={symbol}"
+  },
+  {
+   "key": "ensembl",
+   "label": "Ensembl",
+   "url": "https://www.ensembl.org/Homo_sapiens/Gene/Summary?g={ensembl_gene}"
+  },
+  {
+   "key": "pdb",
+   "label": "RCSB PDB",
+   "url": "https://www.rcsb.org/search?q={symbol}"
+  },
+  {
+   "key": "string",
+   "label": "STRING",
+   "url": "https://string-db.org/cgi/network?identifiers={symbol}&species=9606"
+  },
+  {
+   "key": "pubmed",
+   "label": "PubMed",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/?term={symbol}+AND+T+cell"
+  }
+ ]
+}

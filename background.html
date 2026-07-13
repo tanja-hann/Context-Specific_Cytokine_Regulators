@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Background — Target Browser</title>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.setAttribute('data-theme', localStorage.getItem('tb-theme')||'light');</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="index.html" style="margin:0">← All targets</a>
+    <span class="spacer"></span>
+    <a class="navlink" href="data-support.html">Data support</a>
+    <a class="navlink" href="background.html">Background</a>
+    <button id="theme-toggle" class="theme-toggle" type="button">☾ Dark</button>
+  </div>
+  <article id="writeup" class="writeup"><div class="loading">Loading…</div></article>
+  <footer id="site-footer" class="site-footer"></footer>
+</div>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/background.js"></script>
+<script>window.__initTheme();</script>
+</body>
+</html>
